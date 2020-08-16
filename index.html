@@ -342,14 +342,59 @@
         </td>
       </tr>
       </tbody></table>
-      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+
+    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <tbody>
+          <tr onmouseout="stock_stop()" onmouseover="stock_start()">
+          <td width="25%">
+            
+            <div class="one">
+                <div class="two" id="stock_image" style="opacity: 0;"><img src="images/stock_2.png"></div>
+                <img src="images/stock.png">
+            </div>                
+            <script type="text/javascript">
+            function stock_start() {
+              document.getElementById('stock_image').style.opacity = "1";
+            }
+            function stock_stop() {
+              document.getElementById('stock_image').style.opacity = "0";
+            }
+            nvidia_stop()
+            </script>
+                    
+              </td>
+              
+              <td valign="top" width="75%">
+              <p><papertitle>Stock Info Visualizer App <a href = "https://stock-app-vk94.herokuapp.com/"> (Link) </a> <br> </papertitle>Hobby Project</a> <br> Aug '20
+
+
+              </p><p></p>
+
+            <p>  
+		 	<li>The app lets user study stock and options prices on a chart across different time periods. </li>
+		 	<li>It also compiles latest news on the company for the user to stay up to date. (More to come).</li>
+		 	<li>It uses the <a href="https://pypi.org/project/yfinance/">yfinance</a> and <a href="https://github.com/mariostoev/finviz">finviz</a> APIs in backend.</li>
+			<li>It is built purely in Python. Uses Plotly, Dash to create the app and deploys it on Heroku Platform.</li>
+			
+		 	</p>
+              
+              
+              
+              </td>
+            </tr>
+
+      </tbody></table>
+
+
+     <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
         <tbody>
           <tr onmouseout="p311_stop()" onmouseover="p311_start()">
           <td width="25%">
             
             <div class="one">
-                <div class="two" id="p311_image" style="opacity: 0;"><img src="images/p311_2.jpeg"></div>
-                <img src="images/p311_1.jpeg">
+                <div class="two" id="p311_image" style="opacity: 0;"><img src="images/p311_1.jpeg"></div>
+                <img src="images/p311_2.jpeg">
             </div>                
             <script type="text/javascript">
             function p311_start() {
