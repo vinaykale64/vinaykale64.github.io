@@ -274,6 +274,48 @@
       </tbody></table>
 
 
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tbody>
+            <tr onmouseout="euphony_stop()" onmouseover="euphony_start()">
+            <td width="25%">
+
+              <div class="one">
+                  <div class="two" id="euphony_image" style="opacity: 0;"><img src="images/euphony.png"></div>
+                  <img src="images/euphony_2.png">
+              </div>
+              <script type="text/javascript">
+              function euphony_start() {
+                document.getElementById('euphony_image').style.opacity = "1";
+              }
+              function euphony_stop() {
+                document.getElementById('euphony_image').style.opacity = "0";
+              }
+              euphony_stop()
+              </script>
+
+                </td>
+
+                <td valign="top" width="75%">
+                <p><papertitle>Euphony (Python Package) <a href = "https://pypi.org/project/euphony/"> (Link) </a> <br> </papertitle>
+
+
+                </p><p></p>
+
+              <p>
+  		 	<li>This is a python package which lets you play music while you run huge chuncks
+        of code in background. I wrote this to solve for a need I faced myself.</li>
+        <li>Future versions intend to include custom user options for the choice of music
+        and a jupyter magic command to enable it by default on notebooks. </li>
+
+  		 	</p>
+
+
+
+                </td>
+              </tr>
+
+        </tbody></table>
+
     <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
         <tbody>
           <tr onmouseout="stock_stop()" onmouseover="stock_start()">
@@ -290,21 +332,21 @@
             function stock_stop() {
               document.getElementById('stock_image').style.opacity = "0";
             }
-            nvidia_stop()
+            stock_stop()
             </script>
 
               </td>
 
               <td valign="top" width="75%">
-              <p><papertitle>Stock Info Visualizer App <a href = "https://stock-app-vk94.herokuapp.com/"> (Link) </a> <br> </papertitle>Hobby Project</a> <br> Aug '20
+              <p><papertitle>Market Monitor (App) <a href = "https://stock-app-vk94.herokuapp.com/"> (Link) </a> <br> </papertitle>
 
 
               </p><p></p>
 
             <p>
 		 	<li>The app lets user study stock and options prices on a chart across different time periods. It compiles latest news on the company for the user to stay up to date. (More to come). The data is sourced through the <a href="https://pypi.org/project/yfinance/">yfinance</a> and <a href="https://github.com/mariostoev/finviz">finviz</a> APIs in backend.</li>
-			<li>The app is built in Python. It uses Plotly, Dash to create the visualization and Heroku platform for deployment.</li>
-      (Note: The app might take few seconds to load as the platform boots a <a href="https://devcenter.heroku.com/articles/how-heroku-works#dyno-manager">dyno</a>.)
+			<li>The app is built in Python. It uses Plotly, Dash to create the visualization and Heroku platform for deployment.
+      (Note: The app might take few seconds to load as the platform boots a <a href="https://devcenter.heroku.com/articles/how-heroku-works#dyno-manager">dyno</a>.)</li>
 
 		 	</p>
 
@@ -332,7 +374,7 @@
             function p311_stop() {
               document.getElementById('p311_image').style.opacity = "0";
             }
-            nvidia_stop()
+            p311_stop()
             </script>
 
               </td>
@@ -428,7 +470,7 @@
             function pydata_stop() {
               document.getElementById('pydata_image').style.opacity = "0";
             }
-            nvidia_stop()
+            pydata_stop()
             </script>
 
               </td>
