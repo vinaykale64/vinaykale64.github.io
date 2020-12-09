@@ -1,0 +1,196 @@
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Vinay Dinkar Kale}} & Email: \href{mailto:vinay.kale@columbia.edu}{vinay.kale@columbia.edu}\\
+  \href{https://vinaykale64.github.io}{Portfolio: vinaykale64.github.io} & Mobile:~~~+1-646-510-10424 \\
+  \href{https://github.com/vinaykale64}{Github: ~~github.com/vinaykale64} \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\vspace{10pt}
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Columbia University in the City of New York}{NYC, New York}
+      {M.S. Data Science}{Sep 2017 - Dec 2018}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Probability Theory, Statistical Inference and Modeling, Machine Learning, NLP, Deep Learning, Algorithms, Data Storytelling }}}
+    \resumeSubHeadingListEnd
+    \vspace{-10pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Technology Madras}{Chennai, India}
+      {B.Tech Mechanical Engineering M.Tech Product Design}{Aug 2011 - May 2016}
+    \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------------
+
+\vspace{-5pt}
+\section{Skills}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Languages}{~~~~~~Python, R, SQL, Spark, Hive, Scala, Julia, C, C++, MATLAB, LaTeX}
+	\resumeSubItem{Frameworks}{~~~~Scikit, TensorFlow, Keras, PyTorch, Dask, Plotly, Dash, RShiny, Django, Flask, Tableau, MS Office}
+	\resumeSubItem{Tools}{~~~~~~~~~~~~~~Docker, GIT, Airflow, PostgreSQL, MySQL, Snowflake, Jenkins, Travis, Cookiecutter, JIRA}
+	\resumeSubItem{Platforms}{~~~~~~~Linux, AWS, GCP, Microsoft Azure}
+
+%-----------Experience-----------------
+
+\resumeSubHeadingListEnd
+\vspace{0pt}
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading{Capital One}{NYC, USA}
+    {Senior Data Scientist}{Feb 2019 - Present}
+    \resumeItemListStart
+        \resumeItem{Building ML Models}
+          {Worked on building end-to-end ML models for account valuation deployed via REST API}
+          \resumeItem{Design Refactor}
+          {Led refactor of internal libraries to increase scalability and provide consistent UI}
+          \resumeItem{Visualization Framework}{Created a model monitoring and validation framework template with Cookiecutter for adoption among different DS teams}
+      \resumeItemListEnd
+
+\vspace{5pt}
+    \resumeSubheading
+		{Spotify}{NYC, USA}
+		{Data Scientist Intern}{June 2018 -  Aug 2018}
+		\resumeItemListStart
+        \resumeItem{Segmentation Pipeline}
+          {Developed a fan-artist-pair segmentation pipeline which quantified affinity of a consumer towards an artist spanning over 16B such pairs}
+        \resumeItem{AB Testing}
+          {Analyzed how a new stories feature in app affects a typical fan-artist journey by leveraging AB Tests and using statistical significance analysis}
+		\resumeItemListEnd
+
+\vspace{5pt}
+    \resumeSubheading
+		{ZS Associates}{Pune, India}
+		{Data Scientist}{July 2016 -  July 2017}
+		\resumeItemListStart
+        \resumeItem{Medical Clustering API}
+          {Built a novice AI Medical API using patient-data vector embeddings (similar to Word2Vec) trained on sequential big medical data. This served as input to patient-level classification models.}
+        \resumeItem{Mixed models}
+          {Created a marketing-mix based spend analyzer data pipeline which calculates impacts of different marketing campaigns.}
+		\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------Publications-----------------
+
+\vspace{-5pt}
+\section{Publications}
+\resumeSubHeadingListStart
+\resumeSubItem{CVPR Conference 2018: Traffic Surveillance Research Paper}{Used Mask-RCNN for object detection and localization, vehicle tracking and vehicle re-identification for highway traffic scenarios (April '18)}
+\vspace{2pt}
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+
+%-----------PROJECTS-----------------
+\vspace{0pt}
+\section{Projects}
+    \resumeSubheading
+		{\href{https://pypi.org/project/euphony/}{Euphony}\\}{ }
+		{Python Package on PyPI}{ }
+		\resumeItemListStart
+        \resumeItem
+          {}
+          {The package alerts you when you finish running time-consuming code. It plays classical music while the code runs and stops when the code is done. Current version lets user choose artist optionally and future development includes injecting an external url to any music file.}
+		\resumeItemListEnd
+
+    \resumeSubheading
+		{\href{https://stock-app-vk94.herokuapp.com}{Market-Monitor}\\}{ }
+		{Live Web-app to monitor financial markets}{ }
+		\resumeItemListStart
+        \resumeItem{}
+          {The app lets user study stock and options prices on a chart across different time periods. It compiles latest news on the company for the user to stay up to date. The data is sourced through the yfinance and finviz APIs in backend with the app deplyed on Heroku platform.}
+		\resumeItemListEnd
+
+%-----------Teaching and Volunteer Experience-----------------
+
+\vspace{0pt}
+\section{Teaching and Volunteer Experience}
+  \resumeSubHeadingListStart
+	\resumeSubheading
+    {PyData Conference 2019}{NYC, USA}
+    {[Organizing committee] Reviewed proposals and led the effort for Diversity Scholarship.}{July 2019 - Sep 2019}
+\vspace{-5pt}
+    \resumeSubheading
+    {COMS 4995 Applied Machine Learning}{NYC, USA}
+    {[Teaching Assistant] Guided students and helped with evaluations.}{Spring 2018}
+\vspace{-5pt}
+    \resumeSubheading
+    {COMS 4996 Applied Deep Learning}{NYC, USA}
+    {[Teaching Assistant] Guided students and helped with evaluations.}{Fall 2018}
+
+\resumeSubHeadingListEnd
+
+\end{document}
