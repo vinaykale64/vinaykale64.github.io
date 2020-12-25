@@ -65,6 +65,8 @@
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
 
+\newcommand{\resumeSubItemNew}[2]{\resumeItemNew{#1}{#2}\vspace{-3pt}}
+
 \renewcommand{\labelitemii}{$\circ$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
@@ -106,9 +108,9 @@
 \vspace{-5pt}
 \section{Skills}
 	\resumeSubHeadingListStart
-	\resumeSubItem{Languages}{~~~~~~Python, R, SQL, Spark, Scala, Julia, C, C++, LaTeX}
-	\resumeSubItem{Frameworks}{~~~~Scikit, Dask, Plotly, Dash, TensorFlow, Keras, PyTorch, RShiny, Django, Flask, Tableau, MS Office}
-	\resumeSubItem{Platforms}{~~~~~~~Docker, GIT, Airflow, MySQL, Linux, AWS, GCP, Microsoft Azure, Heroku, Jenkins, Travis}
+	\resumeSubItemNew{Languages}{~~~~~~Python, R, SQL, Spark, Scala, Julia, C, C++, LaTeX}
+	\resumeSubItemNew{Frameworks}{~~~~Scikit, Dask, Plotly, Dash, TensorFlow, Keras, PyTorch, RShiny, Django, Flask, Tableau, MS Office}
+	\resumeSubItemNew{Platforms}{~~~~~~~Docker, GIT, Airflow, MySQL, Linux, AWS, GCP, Microsoft Azure, Heroku, Jenkins, Travis}
 
 %-----------Experience-----------------
 
@@ -120,24 +122,24 @@
     \resumeSubheading{Capital One, New York}{}
     {Senior Data Scientist}{2019 - Present}
     \resumeItemListStart
-        \resumeItem{}
+        \resumeItemNew{}
           {Worked on building cloud-based end-to-end credit card underwriting ML model deployed via a dockerized Python API, affecting more than 100M Customers, with estimated incremental value of \$35M per year}
-          \resumeItem{}
-          {Advised on design refactor of internal python libraries with focus on design (reusability, architecture, code quality)}
-          \resumeItem{}{Led development of modernized model monitoring and validation framework, decreasing the time and effort required to complete compliance-required monitoring from a week to 8 hours}
-          \resumeItem{}{Coached peer data scientists on effective developer habits with focus on code quality, consistent user documentation, unit testing and git workflows}
+          \resumeItemNew{}{Led development of agile model monitoring and validation framework with domain experts, decreasing the time and effort required to complete compliance-required monitoring from a week to 8 hours.}
+          \resumeItemNew{}
+          {Advised on refactor of python libraries from partner teams with focus reusability, architecture and design.}
+          \resumeItemNew{}{Coached junior data scientists on developer habits like code quality, testing, documentation and git workflows}
       \resumeItemListEnd
       
 \vspace{5pt}
     \resumeSubheading
 		{Spotify, New York}{}
-		{Data Science Intern}{Summer 2018}
+		{Data Scientist}{Summer 2018}
 		\resumeItemListStart
-        \resumeItem{}
+        \resumeItemNew{}
           {Worked closely with cross-functional teams of analysts, user researchers, product owners and engineers to develop a fan-artist pair segmentation pipeline which quantified the affinity for 20 billion fan-artist pairs}
-        \resumeItem{}
+        \resumeItemNew{}
           {With that, analyzed how a new video overlay feature affects a typical fan-artist journey and how different fan segments engage with it, by statistical analysis on data from AB tests}
-        \resumeItem{}
+        \resumeItemNew{}
           {Other Projects: Optimised data pipelines through Google Bigquery, Redesigned artist tiering dashboard}
           
            
@@ -148,19 +150,19 @@
 		{ZS Associates, India}{}
 		{Data Scientist}{2016 - 2017}
 		\resumeItemListStart
-        \resumeItem{}
-          {Built a intelligent Medical API using patient-data vector embeddings (similar to Word2Vec) trained on sequential big medical data. This served as input to several patient-level classification models}
-        \resumeItem{}
-          {Calculated network influence in social media space (Twitter) for particular industry using graphical algorithms like Pagerank, following in-depth social media content analysis}
-        \resumeItem{}
-          {Created a marketing-mix based spend analyzer data pipeline which calculates impacts of different marketing campaigns}
+        \resumeItemNew{}
+          {Built a intelligent Medical API for Pharmaceutical clients using patient-data vector embeddings (similar to Word2Vec) trained on sequential big medical data. This served as input to patient-level classification models.}
+        \resumeItemNew{}
+          {Led project in a client-facing role for marketing-mix based spend analyzer pipeline which calculates impacts of different marketing campaigns. Helped secure continued engagement for similar projects down the line.}
+        \resumeItemNew{}
+          {Spearheaded effort within the company for reproducibility by on-boarding all projects with git version control and setting precedent for consistent user and developer documentation.}
 		\resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
 %-----------Publications-----------------
 
-\vspace{-5pt}
+\vspace{-10pt}
 \section{Research}
 \resumeSubheading
 		{\href{https://openaccess.thecvf.com/content_cvpr_2018_workshops/w3/html/Mao_AIC2018_Report_Traffic_CVPR_2018_paper.html}{CVPR Conference 2018: Traffic Surveillance Research Paper}\\}{ }
@@ -168,7 +170,7 @@
 		\resumeItemListStart
         \resumeItemNew
           {}
-          {Novel method of using Mask-RCNN for object detection and localization, vehicle tracking and vehicle re-identification for highway traffic scenarios.}
+          {Novel Mask-RCNN method for object detection and localization, vehicle tracking and vehicle re-identification.}
 		\resumeItemListEnd
 
 %-----------PROJECTS-----------------
