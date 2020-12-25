@@ -42,6 +42,12 @@
   }
 }
 
+\newcommand{\resumeItemNew}[2]{
+  \item{
+    \textbf{#1}{#2 \vspace{-2pt}}
+  }
+}
+
 \newcommand{\resumeItemWithoutTitle}[1]{
   \item\small{
     {\vspace{-2pt}}
@@ -51,7 +57,7 @@
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
+      \textbf{#1} & \textit{#2} \\
       \textit{#3} & \textit{#4} \\
     \end{tabular*}\vspace{-5pt}
 }
@@ -79,20 +85,20 @@
 \end{tabular*}
 
 %-----------EDUCATION-----------------
-\vspace{5pt}
+\vspace{0pt}
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
       {Columbia University, New York}{NYC, New York}
       {M.S. Data Science}{2017 - 2018}
-      {\scriptsize { \footnotesize{\newline{}{Relevant Coursework:} Probability Theory, Statistics, Machine Learning, NLP, Deep Learning, Algorithms, Data Storytelling }\newline}}
-      {\scriptsize { \footnotesize{{Teaching Assistant For:} Applied Machine Learning, Applied Deep Learning }}}
+      {\scriptsize { \small{\newline{}{Relevant Coursework:} Probability Theory, Statistics, Machine Learning, NLP, Deep Learning, Algorithms, Data Storytelling }}}
     \resumeSubHeadingListEnd
     \vspace{-10pt}
   \resumeSubHeadingListStart
     \resumeSubheading
       {Indian Institute of Technology Madras (IIT Madras)}{Chennai, India}
       {B.Tech Mechanical Engineering, M.Tech Product Design}{2011 - 2016}
+      {\scriptsize { \small{\newline{}{Relevant Coursework:} Computational Engineering, Time Series Analysis, Regression Models, Operations Managment}}}
     \resumeSubHeadingListEnd
     
 %-----------SKILLS-----------------
@@ -100,15 +106,14 @@
 \vspace{-5pt}
 \section{Skills}
 	\resumeSubHeadingListStart
-	\resumeSubItem{Languages}{~~~~~~Python, R, SQL, Spark, Hive, Scala, Julia, C, C++, MATLAB, LaTeX}
+	\resumeSubItem{Languages}{~~~~~~Python, R, SQL, Spark, Scala, Julia, C, C++, LaTeX}
 	\resumeSubItem{Frameworks}{~~~~Scikit, Dask, Plotly, Dash, TensorFlow, Keras, PyTorch, RShiny, Django, Flask, Tableau, MS Office}
-	\resumeSubItem{Tools}{~~~~~~~~~~~~~~Docker, GIT, Airflow, PostgreSQL, MySQL, Snowflake, Jenkins, Travis, Cookiecutter, JIRA}
-	\resumeSubItem{Platforms}{~~~~~~~Linux, AWS, GCP, Microsoft Azure, Heroku}
+	\resumeSubItem{Platforms}{~~~~~~~Docker, GIT, Airflow, MySQL, Linux, AWS, GCP, Microsoft Azure, Heroku, Jenkins, Travis}
 
 %-----------Experience-----------------
 
 \resumeSubHeadingListEnd
-\vspace{0pt}
+\vspace{-5pt}
 \section{Experience}
   \vspace{2pt}
   \resumeSubHeadingListStart
@@ -157,40 +162,46 @@
 
 \vspace{-5pt}
 \section{Research}
-\resumeSubHeadingListStart
-\resumeSubItem{CVPR Conference 2018: Traffic Surveillance Research Paper }{Used Mask-RCNN for object detection and localization, vehicle tracking and vehicle re-identification for highway traffic scenarios. Secured 5th Place in Nvidia AI City Challenge 2018.}
-\vspace{2pt}
-\resumeSubHeadingListEnd
-\vspace{-5pt}
+\resumeSubheading
+		{\href{https://openaccess.thecvf.com/content_cvpr_2018_workshops/w3/html/Mao_AIC2018_Report_Traffic_CVPR_2018_paper.html}{CVPR Conference 2018: Traffic Surveillance Research Paper}\\}{ }
+		{}{ }
+		\resumeItemListStart
+        \resumeItemNew
+          {}
+          {Novel method of using Mask-RCNN for object detection and localization, vehicle tracking and vehicle re-identification for highway traffic scenarios.}
+		\resumeItemListEnd
 
 %-----------PROJECTS-----------------
-\vspace{-5pt}
+\vspace{0pt}
 \section{Projects}
     \resumeSubheading
-		{\href{https://pypi.org/project/euphony/}{Euphony}\\}{ }
-		{Python Package on PyPI}{ }
+		{\href{https://pypi.org/project/euphony/}{Euphony}: Python Package on PyPI\\}{ }
+		{}{ }
 		\resumeItemListStart
-        \resumeItem
+        \resumeItemNew
           {}
-          {The package alerts you when you finish running time-consuming code. It plays classical music while the code runs and stops when the code is done. Current version lets user choose artist optionally and future development includes ingesting an external url to any audio (.wav, .mp3) file. The documentation is available on its sphinx site.}
+          {Get alerts while running time-consuming code. With a simple wrapper, it plays classical music while the code completes. It also lets user choose among artists. Future development includes ability t play external mp3 files.}
 		\resumeItemListEnd
 		
     \resumeSubheading
-		{\href{https://stock-app-vk94.herokuapp.com}{Market-Monitor}\\}{ }
-		{Live web-app to monitor financial markets}{ }
+		{\href{https://stock-app-vk94.herokuapp.com}{Market-Monitor}: Live web-app to monitor financial markets\\}{}
+		{}{}
 		\resumeItemListStart
-        \resumeItem{}
-          {The app lets user study stock and options prices on a chart across different time periods. It compiles latest news on the company for the user to stay up to date. The data is sourced through the yahoo finance and finviz APIs in backend, Dash library for front-end and Heroku platform for app deployment. It comes with a developer guide to help developers.}
+        \resumeItemNew{}
+          {Study stock and options prices with latest news for any company. The app uses Yahoo Finance APIs for data, Dash for visualization and  Heroku for app deployment. It comes with a developer guide for documentation.}
 		\resumeItemListEnd
 
 %-----------Teaching and Volunteer Experience-----------------
 
 \vspace{0pt}
 \section{Volunteer Experience}
-  \resumeSubHeadingListStart
 	\resumeSubheading
-    {PyData Conference 2019, New York}{}
-    {As part of organizing committee, reviewed proposals and led the effort for Diversity Scholarship.}{Summer 2019}
+    {Organizing Committee, PyData Conference NYC}{Summer 2019}
+    {Led team for reviewing proposals and spearheaded the Diversity Scholarship Initiative}{}
+    \newline
+    \resumeSubheading
+    {Teaching Assistant, Columbia University}{2018}
+    {Applied Machine Learning, Applied Deep Learning.}{}
 
 \resumeSubHeadingListEnd
 
