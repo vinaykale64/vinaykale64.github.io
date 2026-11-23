@@ -7,7 +7,8 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[pdftex]{hyperref}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, urlcolor=MidnightBlue, linkcolor=MidnightBlue}
 \usepackage{fancyhdr}
 
 \pagestyle{fancy}
@@ -81,131 +82,115 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{{\LARGE Vinay Dinkar Kale}} & Email: \href{mailto:vinaykale64@gmail.com}{vinaykale64@gmail.com}\\
+  \textbf{{\LARGE Vinay Dinkar Kale}} & Email: \href{mailto:vinay.kale@columbia.edu}{vinay.kale@columbia.edu}\\
    & Mobile:~~~+1-646-510-1024 \\
-  \href{https://vinaykale64.github.io}{Portfolio: vinaykale64.github.io} & linkedin.com/in/vinay-kale-71b7b48a \\
+  Portfolio: \href{https://vinaykale64.github.io}{vinaykale64.github.io} ~|~ \href{https://github.com/vinaykale64}{github.com/vinaykale64} ~|~ \href{https://scholar.google.com/citations?hl=en\&user=hiZaCjIAAAAJ}{Scholar} & \href{https://www.linkedin.com/in/vinay-kale-71b7b48a/}{linkedin.com/in/vinay-kale-71b7b48a} \\
 \end{tabular*}
 
-%-----------EDUCATION-----------------
-\vspace{0pt}
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Columbia University}{NYC, New York}
-      {M.S. Data Science}{Sep 2017 - Dec 2018}
-      {\scriptsize { \small{\newline{}{Relevant Coursework:} Probability Theory, Statistics, Machine Learning, NLP, Deep Learning, Algorithms, Data Storytelling }}}
-    \resumeSubHeadingListEnd
-    \vspace{-10pt}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Indian Institute of Technology Madras (IITM)}{Chennai, India}
-      {B.Tech Mechanical Engineering, M.Tech Product Design}{Aug 2011 - May 2016}
-      {\scriptsize { \small{\newline{}{Relevant Coursework:} Computational Engineering, Time Series Analysis, Regression Models, Operations Managment}}}
-    \resumeSubHeadingListEnd
-    
-%-----------SKILLS-----------------
+\vspace{4pt}
+Senior Data Scientist with 9+ years of experience in advanced ML modeling, time-series forecasting, and production-grade Generative AI and agentic systems. Patent holder and peer reviewer for NeurIPS, ACM FAccT and The Web Conference.
 
-\vspace{-10pt}
-\section{Skills}
-	\resumeSubHeadingListStart
-	\resumeSubItemNew{Languages}{~~~~~~Python, R, SQL, Spark, Scala, Julia, C, C++, LaTeX}
-	\resumeSubItemNew{Frameworks}{~~~~Scikit, Dask, Plotly, Dash, TensorFlow, Keras, PyTorch, RShiny, Django, Flask, Tableau, MS Office}
-	\resumeSubItemNew{Platforms}{~~~~~~~Docker, GIT, Airflow, MySQL, Linux, AWS, GCP, Microsoft Azure, Heroku, Jenkins, Travis}
-
-%-----------Experience-----------------
-
-\resumeSubHeadingListEnd
-\vspace{-5pt}
+%-----------EXPERIENCE-----------------
+\vspace{2pt}
 \section{Experience}
   \vspace{2pt}
   \resumeSubHeadingListStart
     \resumeSubheading
-		{Amazon (AWS)}{Seattle, USA}
-		{Data Scienctist II}{July 2021 - Present}
-		\resumeItemListStart
-        \resumeItemNew{}
-          {Working on development of state of the art data pipelines, forecasting models and model evaluation systems for prediction of Contact Volume and Average Handling Time Drivers across the AWS Connect Science team.}
-		\resumeItemListEnd
-  
-\vspace{0pt}  
-    \resumeSubheading{Capital One}{NYC, USA}
-    {Senior Data Scientist}{Feb 2019 - July 2021}
-    \resumeItemListStart
-        \resumeItemNew{}
-          {Developing robust and reusable next-gen valuation, risk and fraud XGBoost ML model pipelines reaching 100M+ customers, with estimated incremental value of \$35M per year.}
-          \resumeItemNew{}{Architected agile and automated monitoring framework for valuation models, decreasing the time required to complete quarterly compliance-monitoring from a week to 8 hours.}
-          \resumeItemNew{}
-          {Built python libraries for Data Sourcing and Cleaning with focus on design, re-usability and user experience. Went through multiple refactor cycles to keep it efficient and up-to date.}
+      {Amazon Web Services (Amazon Connect)}{Santa Clara, USA}
+      {Senior Data Scientist}{July 2021 - Present}
+      \resumeItemListStart
+        \resumeItemNew{}{Defined the science roadmap for Amazon Connect's AI initiatives, aligning high-impact machine learning projects with core enterprise business objectives.}
+        \resumeItemNew{}{Architected and scaled AI forecasting and anomaly detection models for contact center demand and supply metrics (contact volume, average handle time, agent headcount) across intraday, short-term and long-term horizons, used by 300+ government agencies and Fortune 100 companies for agent allocation and cost reduction.}
+        \resumeItemNew{}{Led R\&D of GenAI capabilities and LLM-based agents that automate complex contact center manager and supervisor workflows, improving automation and customer experience.}
+        \resumeItemNew{}{Invented patented ML methods for sparse-data time-series forecasting (1 granted, 1 filed); mentor peer scientists and drive standards for model architecture and validation.}
       \resumeItemListEnd
-      
-\vspace{0pt}
+
     \resumeSubheading
-		{Spotify}{NYC, USA}
-		{Data Science Intern}{Jun 2018 - Aug 2018}
-		\resumeItemListStart
-        \resumeItemNew{}
-          {Working with cross-functional team of user researchers and product analysts, developed a fan-artist pair segmentation pipeline which quantifies the affinity for 20 Billion fan-artist pairs.}
-        \resumeItemNew{}
-          {Analyzed how a new feature affects fan-artist journeys via by statistical analysis on data from AB tests. }
-		\resumeItemListEnd
+      {Capital One}{NYC, USA}
+      {Senior Data Scientist}{Feb 2019 - July 2021}
+      \resumeItemListStart
+        \resumeItemNew{}{Built an end-to-end credit card underwriting XGBoost model deployed via Python API, reaching 100M+ customers with an estimated incremental value of \$35M per year; developed reusable valuation, risk and fraud model pipelines.}
+        \resumeItemNew{}{Architected an agile, automated monitoring and validation framework for valuation and behavioral models, reducing quarterly compliance monitoring from one week to 8 hours.}
+        \resumeItemNew{}{Maintained Python libraries for data sourcing, cleaning and feature transformation, leading multiple refactor cycles; coached peers on code quality, documentation, unit testing and git workflows.}
+      \resumeItemListEnd
 
-\vspace{0pt}
     \resumeSubheading
-		{ZS Associates}{Pune, India}
-		{Data Scientist}{June 2016 - July 2017}
-		\resumeItemListStart
-        \resumeItemNew{}
-          {Developed marketing-mix modeling pipeline using multivariate regression for client in retail media sector. Increased Total ROI by 15 percent and secured engagements for 3 similar additional projects.}
-        \resumeItemNew{}
-          {Built a novel Patient Clustering Engine for pharmaceutical clients using patient-data vector embeddings trained on sequential big medical data. This served as input to several patient-level classification models.}
-		\resumeItemListEnd
+      {Spotify}{NYC, USA}
+      {Data Science Intern, Product Insights}{Jun 2018 - Aug 2018}
+      \resumeItemListStart
+        \resumeItemNew{}{Developed a fan-artist pair segmentation pipeline quantifying affinity for 20 billion fan-artist pairs, and measured how a new feature affects fan-artist journeys through statistical analysis of A/B test data.}
+      \resumeItemListEnd
 
-\resumeSubHeadingListEnd
-
-%-----------Publications-----------------
-
-\vspace{-10pt}
-\section{Research}
-\resumeSubheading
-		{\href{https://openaccess.thecvf.com/content_cvpr_2018_workshops/w3/html/Mao_AIC2018_Report_Traffic_CVPR_2018_paper.html}{CVPR Conference 2018: Traffic Surveillance Research Paper}\\}{}
-		{}{ }
-		\resumeItemListStart
-        \resumeItemNew
-          {}
-          {We introduce novel usage of Mask-RCNN algorithm for vehicle detection, speed estimation and vehicle tracking for video footage of cars in highway. Achieved 100 percent detection rate and 7.97mi/hr speed estimation error.}
-		\resumeItemListEnd
-
-%-----------PROJECTS-----------------
-\vspace{0pt}
-\section{Projects}
     \resumeSubheading
-		{\href{https://pypi.org/project/euphony/}{Euphony: Python Package on PyPI}\\}{}
-		{}{}
-		\resumeItemListStart
-        \resumeItemNew
-          {}
-          {Built a utility which lets users track code completion. With a simple wrapper, it plays classical music while the code is executed. Users can choose among range of artists.}
-		\resumeItemListEnd
+      {ZS Associates}{Pune, India}
+      {Data Scientist}{July 2016 - July 2017}
+      \resumeItemListStart
+        \resumeItemNew{}{Developed a marketing-mix modeling pipeline using multivariate regression for a retail media client, increasing total ROI by 15\% and securing engagements for 3 additional projects.}
+        \resumeItemNew{}{Built a patient clustering engine for pharmaceutical clients using patient-data vector embeddings trained on sequential medical data, feeding several patient-level classification models.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PATENTS AND PUBLICATIONS-----------------
+\vspace{-6pt}
+\section{Patents and Publications}
+\textbf{Patents}
+\begin{itemize}[leftmargin=*, itemsep=0pt, topsep=1pt]
+  \item \href{https://patentsgazette.uspto.gov/week52/OG/html/1541-5/US12511576-20251230.html}{US 12,511,576 B1}: Correcting Time Series Predictions for Seasonality with Trends in Contact Centers (Granted, Dec 2025)
+  \item P86851-US01: Accurate Average Speed of Answer (ASA) and Service Level (SL) Forecasts using Effective Supply Calculation in Contact Centers (Filed)
+\end{itemize}
+\textbf{Publications}
+\begin{itemize}[leftmargin=*, itemsep=0pt, topsep=1pt]
+  \item \textbf{Amazon Machine Learning Conference (AMLC) 2023}: Generalized Anomaly Detection with Contact Center Use Case. Reviews anomaly detection techniques and proposes a novel ensemble approach for contact center environments.
+  \item \textbf{CVPR 2018 Workshops (Nvidia AI City Challenge)}: \href{https://openaccess.thecvf.com/content_cvpr_2018_workshops/w3/html/Mao_AIC2018_Report_Traffic_CVPR_2018_paper.html}{AIC2018 Report: Traffic Surveillance Research}. Mask-RCNN detection and Deep-SORT tracking for vehicle speed estimation on highway footage; 100\% detection rate, 7.97 mi/hr speed error. Team placed 5th. 15 citations.
+\end{itemize}
+
+%-----------ACADEMIC SERVICE-----------------
+\section{Academic Service}
+\begin{itemize}[leftmargin=*, itemsep=0pt, topsep=1pt]
+  \item \textbf{Reviewer, Conferences}: NeurIPS 2026, ACM FAccT 2027, The Web Conference (WWW) 2027
+  \item \textbf{Reviewer, Workshops}: SAFE @ AAAI 2027 (Synthetic \& Adversarial ForEnsics), Trust4RSI-Agent @ AAAI 2027
+  \item \textbf{Reviewer, Journal}: AI and Ethics (Springer Nature)
+\end{itemize}
+
+%-----------AWARDS-----------------
+\section{Awards}
+\begin{itemize}[leftmargin=*, itemsep=0pt, topsep=1pt]
+  \item \textbf{EB2 National Interest Waiver (NIW)}, June 2025: granted by the US government for the endeavor of ``Improving efficiency of contact centers by using AI-driven Work-Force Management (WFM) systems.''
+  \item \textbf{Runner Up, Columbia Data Science Society Hackathon}, Sep 2017: built an NLP network model to detect fraud in the Enron email corpus; won a \$2,000 cash prize.
+\end{itemize}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
     \resumeSubheading
-		{\href{https://stock-app-vk94.herokuapp.com}{Market-Monitor: Live web-app to monitor financial markets}\\}{}
-		{}{}
-		\resumeItemListStart
-        \resumeItemNew{}
-          {Developed an app which lets user study stock and options prices with latest news for any company, all in one place. It uses Yahoo Finance APIs for data, Dash library for visualization and  Heroku for app deployment.}
-		\resumeItemListEnd
-
-%-----------Teaching and Volunteer Experience-----------------
-
-\vspace{0pt}
-\section{Volunteer Experience}
-	\resumeSubheading
-    {Organizing Committee, PyData Conference NYC}{June 2019 - Sep 2019}
-    {Led team for reviewing proposals and spearheaded the Diversity Scholarship Initiative}{}
-    \newline
+      {Columbia University}{NYC, USA}
+      {M.S. Data Science}{Sep 2017 - Dec 2018}
+      \par\vspace{6pt}{\small Coursework: Probability Theory, Statistics, Machine Learning, NLP, Deep Learning, Algorithms, Data Storytelling}
     \resumeSubheading
-    {Teaching Assistant, Columbia University}{Jan-Apr/Aug-Dec 2018}
-    {COMS 4995 Applied Machine Learning, COMS 4996 Applied Deep Learning.}{}
+      {Indian Institute of Technology Madras (IITM)}{Chennai, India}
+      {B.Tech Mechanical Engineering, M.Tech Product Design (Dual Degree)}{Aug 2011 - May 2016}
+      \par\vspace{6pt}{\small Coursework: Computational Engineering, Time Series Analysis, Regression Models, Operations Management}
+  \resumeSubHeadingListEnd
 
-\resumeSubHeadingListEnd
+%-----------SKILLS-----------------
+\vspace{-4pt}
+\section{Skills}
+\begin{tabular}{@{}p{1.4in}p{0.8\textwidth}@{}}
+  \textbf{Languages} & Python, SQL, R, Spark, LaTeX \\
+  \textbf{ML / Forecasting} & PyTorch, TensorFlow, scikit-learn, XGBoost, Dask, time-series forecasting, anomaly detection \\
+  \textbf{GenAI / Agents} & LLMs, Amazon Bedrock, LangChain, LangGraph, RAG, Model Context Protocol (MCP), prompt engineering, LLM evaluation \\
+  \textbf{Platforms} & AWS, Docker, Airflow, Git, Linux, MySQL, Tableau, Microsoft Azure, Google Cloud \\
+\end{tabular}
+
+%-----------TEACHING AND VOLUNTEERING-----------------
+\section{Teaching and Volunteering}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Organizing Committee, PyData Conference NYC}{}
+      {Reviewed talk and poster proposals; led the Diversity Scholarship Initiative}{Aug 2019 - Nov 2019}
+    \resumeSubheading
+      {Teaching Assistant, Columbia University}{}
+      {COMS 4995: Applied Machine Learning (Spring 2018), Applied Deep Learning (Fall 2018)}{Jan - Dec 2018}
+  \resumeSubHeadingListEnd
 
 \end{document}
